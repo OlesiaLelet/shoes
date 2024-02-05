@@ -405,10 +405,7 @@ top:25px;
             display: block;
     }
     .navigation--mobile {
-        display:block;
-    
-    .container {
-        max-width: 389px;
+        display:block; 
     }
     .navigation_end {
         padding-left: 0px;
