@@ -1,0 +1,469 @@
+body {
+    margin: 0px;
+    /* display: flex;
+    justify-content: center; інший варіант центрування вмісту сайту. .container потрібно видалити */ 
+
+}
+.container {
+    max-width: 1512px;
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+ .header {
+    display: flex;
+    justify-content: space-between;
+
+} 
+.navigation, .navigation_end {
+    color: black;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    height: 28px;
+    padding-top: 46px;
+    padding-left: 26px;
+    margin: 0px;
+}
+.navigation--mobile {
+    display:none;
+
+}
+.navigation a:hover {
+    box-shadow: 0 -5px 0px lightgray inset;
+
+}
+.navigation_end {
+    display:flex;
+    height: 84px;
+
+}
+.navigation_end img {
+    height: 21px;
+    width: 20px;
+    padding-left: 46px;
+
+}
+.navigation_end a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.navigation li {
+     padding-right: 46px;
+}
+.navigation__shoppy { 
+    margin:46px 10px 26px 0px;
+    background-color: black;
+    color: white;
+    width: 163px;
+    line-height: 46px;
+    height: 46px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    
+
+}
+.navigation--show {
+
+    display:none;
+}
+.navigation-column {
+    flex-direction: column;
+}
+.show-menu {
+    margin-top: 50px;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: none;
+}
+
+/* .burger {
+    
+    padding-top: 77px;
+    padding-left: 32px;
+    margin: 0px;
+    cursor: pointer; 
+    display: none;
+
+
+
+}
+
+.burger__icon {
+    height: 21px;
+    width: 21px; } */
+
+.under_nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap-reverse;
+
+}
+.under_nav__legend {
+    padding-top: 160px;
+    padding-left: 24px;
+    max-width: 325px;
+    }
+.under_nav__legend h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    max-width: 301px;
+    height: 132px;
+}
+.under_nav__legend p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    max-width:251px;
+}
+.under_nav__legend a {
+    display: flex;
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    max-width: 195px;
+    height:50px;
+    border-radius: 15px;
+}
+.under_nav__tapki {
+    display: flex;
+
+}
+.under_nav__tapki--left {
+    padding-top: 179px;
+    max-width: 599.82px;
+    max-height: 428.14px;
+
+}
+.under_nav__tapki--right {
+    padding-top: 169.39px ;
+    max-width: 381.99px;
+    max-height: 341.62px;
+
+}
+.row-1 {
+    display:flex;
+    margin-bottom: 62px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.row-1__pict-1 {
+    position: relative;
+}
+ .row-1__pict-1--text {
+    
+left: 46px;
+top:25px; 
+}
+.row-1__pict-1--text h4 {
+    position: absolute;
+    left: 46px;
+    top: 25px;
+    font-size: 40px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+    margin: 0;
+}
+.row-1__pict-1--text p {
+    position: absolute;
+    top: 396px;
+    left: 590px;
+    bottom: 30px;
+    right: 46px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    height: auto;
+    margin: 0;
+}
+.row-1__pict-1--img-1{
+    margin-left: 24px;
+    margin-right: 8px;
+    max-width: 724px;
+    height: auto;
+}
+
+.row-1__pict-2---img-2 {
+    margin-right: 24px;
+    margin-left: 8px;
+    max-width: 724px;
+    height:auto;
+}
+.row-1__pict-2 {
+    position: relative;
+}
+.row-1__pict-2--text h4 {
+    position: absolute;
+    left: 46px;
+    top: 25px;
+    font-size: 40px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+    margin: 0;
+}
+.row-1__pict-2--text p {
+    position: absolute;
+    top: 376px;
+    right: 46px;
+    left: 20px;
+    bottom: 30px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 0;
+    width: 89px;
+    font-weight: 300px;
+}
+.row-2 {
+    overflow-x: auto;
+}
+.row-2::-webkit-scrollbar {
+    width: 4px;
+    height: 7px;
+}
+.row-2::-webkit-scrollbar-track {
+    background: #E1E1E1;
+}
+.row-2::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.row-2 h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    padding-left: 24px;
+    
+}
+.row-2__pictures {
+    display: flex;
+    padding-left: 24px;
+    margin: 0;
+
+}
+.row-2__pictures li {
+    margin: 0px 35px 15px 0px;
+}
+.row-2__pictures p, h6 {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+.row-3 {
+    overflow-x: auto;
+}
+.row-3::-webkit-scrollbar {
+    width: 4px;
+    height: 7px;
+}
+.row-3::-webkit-scrollbar-track {
+    background: #E1E1E1;
+}
+.row-3::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.row-3 h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    padding-left: 24px;
+    
+}
+.row-3__pictures {
+    display: flex;
+    padding-left: 24px;
+    margin: 0;
+}
+.row-3__pictures li {
+    margin: 0px 35px 15px 0px;
+}
+.row-3__pictures p, h6 {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscription h4 {
+    font-family:"Montserrat", sans-serif;
+    font-size: 40px;
+    max-width: 235px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.subscription__info {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    max-width: 342px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.subscription__buttom {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    width:auto;
+    padding: 14px 24px 13px 23px;
+    border: 2px solid;
+    margin-bottom: 156px;
+}
+.end {
+    background-color: black;
+    color:#ffff;
+    min-height: 285px;
+    position: relative;
+}
+.end__list {
+    display:flex;
+    margin:0;
+    padding-left: 24px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+.end__list li {
+    max-width: 162px;
+    margin-right: 85px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+
+}
+.end__list h6 {
+    color: #C4C4C4;
+
+}
+.end__list li:last-of-type {
+    margin-left: 246px;
+    max-width: 200px;
+
+}
+
+.shopy_inc {
+    position:absolute;
+    left: 649px;
+    bottom: 20px;
+    color: #C4C4C4;
+    min-width: 214px;
+    margin: auto;
+    height: 12px;
+
+}
+.end__list__follow img {
+    margin-right: 13px;
+    width: 25px;
+    height: 25px;
+
+}
+.end__list__follow h6 {
+    margin-bottom: 13px;
+}
+  @media (max-width: 390px) {
+    .navigation {
+        display: none;
+    }
+    .show-menu {
+        display: flex;
+    }
+    
+    }
+    .burger-menu {
+        background-color: lightgray;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        display: none;
+    }
+    .burger-menu--show {
+            display: block;
+    }
+    .navigation--mobile {
+        display:block;
+    
+    .container {
+        max-width: 389px;
+    }
+    .navigation_end {
+        padding-left: 0px;
+    }
+    .navigation__shoppy {
+        margin-top: 56px;
+    }
+    .navigation_end img {
+        height: 21px;
+        width: 20px;
+        padding-left: 16px; 
+    }
+    .under_nav {
+        justify-content: center;
+        flex-direction: column-reverse;
+    } 
+    .under_nav__tapki {
+        max-width: 80%;
+        padding: 0px;
+
+    }
+    .under_nav__tapki--left, .under_nav__tapki--right {
+         max-width:241px;
+         max-height:288.09px; 
+        transform: scale(0.5);
+
+    }
+    
+    .row-1__pict-1--img-1, .row-1__pict-2--img-2 {
+        max-width: 342px;
+        max-height: 342px;
+        margin: 0px;
+
+    }
+    
+    .end {
+        min-height: 435px;
+    }
+    .end__list li {
+        margin-right: 60px;
+        margin-bottom: 10px;
+     } 
+    .end__list li:last-of-type {
+        margin: 0px 0px 0px 24px;
+    }  
+    .shopy_inc {
+        position: static;
+        padding: 10px 5px 10px 5px;
+        text-align: center;
+    }
+
+    
+    
+
+
+ 
+
+ 
