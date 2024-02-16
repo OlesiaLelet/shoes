@@ -10,5 +10,6 @@
     hide.addEventListener("click", function() {
     showedNav.remove("burger-menu--show");
 
-    })
+    })  
  }
+ addListForBurger() 

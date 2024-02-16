@@ -370,15 +370,21 @@ a {
     
     .burger-menu {
         background-color: lightgray;
-        position: fixed;
+        position: absolute;
         top:0;
         left:0;
         right:0;
         bottom:0;
         display: none;
+        opacity: 1;
+        z-index: 1;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(-100%);
     }
     .burger-menu--show {
             display: block;
+            transform: translateY(0);
     }
     .navigation--mobile {
         display:block; 
