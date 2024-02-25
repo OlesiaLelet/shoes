@@ -33,6 +33,9 @@ a {
     padding-left: 26px;
     margin: 0px;
 }
+.navigation {
+    gap: 46px;
+}
 .navigation--mobile {
     display:none;
 
@@ -46,21 +49,17 @@ a {
     height: 84px;
 
 }
-.navigation_end img {
+.navigation_end__search--img, .navigation_end__backet--img {
     height: 21px;
     width: 20px;
     padding-left: 46px;
 
 }
-.navigation_end a {
+.navigation_end__search, .navigation_end__basket {
     display: flex;
     height: 100%;
     align-items: center;
 
-}
-
-.navigation li {
-     padding-right: 46px;
 }
 .navigation__shoppy { 
     margin:46px 10px 26px 0px;
@@ -133,18 +132,18 @@ a {
     padding-left: 24px;
     max-width: 325px;
     }
-.under_nav__legend h1 {
+.under_nav__legend--title {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
     max-width: 301px;
     height: 132px;
 }
-.under_nav__legend p {
+.under_nav__legend--p {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     max-width:251px;
 }
-.under_nav__legend a {
+.under_nav__legend--shop {
     display: flex;
     color: white;
     font-size: 18px;
@@ -156,14 +155,16 @@ a {
     height:50px;
     border-radius: 15px;
 }
-.row-1 {
+.categories {
     display: flex;
     gap: 25px;
     padding-left: 24px;
     flex-wrap: wrap;
+    justify-content: center;
+
 
 }
-.row-1 h4 {
+.categories__pict-1--title, .categories__pict-2--title {
     font-size: 40px;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -171,14 +172,17 @@ a {
     padding: 20px;
 
 }
-.row-1 p {
+.categories__pict-1--p, .categories__pict-2--p {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     color: white;
     margin: 0px;
     padding: 20px;
 }
-.row-1__pict-1 {
+.categories__pict-1--p {
+    align-self: end;
+}
+.categories__pict-1 {
     background-image: url(./images/shoe-1.jpg);
     width: 724px;
     height: 454px;
@@ -188,13 +192,10 @@ a {
     justify-content: space-between;
     align-items: stretch;
 }
-.row-1__pict-1 p {
-    align-self: end;
-}
-.row-1__pict-2 {
+.categories__pict-2 {
     background-image: url(./images/shoe-2.jpg);
-    height:454px;
-    width:724px;
+    width: 724px;
+    height: 454px; 
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -202,78 +203,54 @@ a {
     align-items: stretch;
 
 }
-.row-2 {
+.carrousel-1, .carrousel-2 {
     overflow-x: auto;
 }
-.row-2::-webkit-scrollbar {
+.carrousel-1::-webkit-scrollbar {
+    width: 4px;
+    height: 7px;
+    padding-left: 10px;
+}
+.carrousel-2::-webkit-scrollbar {
     width: 4px;
     height: 7px;
 }
-.row-2::-webkit-scrollbar-track {
+.carrousel-1::-webkit-scrollbar-track {
     background: #E1E1E1;
 }
-.row-2::-webkit-scrollbar-thumb {
+.carrousel-2::-webkit-scrollbar-track {
+    background: #E1E1E1;
+}
+.carrousel-1::-webkit-scrollbar-thumb {
     background: #000;
 }
-.row-2 h3 {
+.carrousel-2::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.carrousel-1__title, .carrousel-2__title {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     padding-left: 24px;
     
 }
-.row-2__pictures {
+.carrousel-1__pictures, .carrousel-2__pictures  {
     display: flex;
     padding-left: 24px;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
+    gap: 15px 35px;
 
 }
-.row-2__pictures li {
-    margin: 0px 35px 15px 0px;
-}
-.row-2__pictures p, h6 {
+.carrousel-1__pictures p, h6, .carrousel-2__pictures p, h6 {
     margin: 0;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
-.row-3 {
-    overflow-x: auto;
-}
-.row-3::-webkit-scrollbar {
-    width: 4px;
-    height: 7px;
-}
-.row-3::-webkit-scrollbar-track {
-    background: #E1E1E1;
-}
-.row-3::-webkit-scrollbar-thumb {
-    background: #000;
-}
-.row-3 h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    padding-left: 24px;
-    
-}
-.row-3__pictures {
-    display: flex;
-    padding-left: 24px;
-    margin: 0;
-}
-.row-3__pictures li {
-    margin: 0px 35px 15px 0px;
-}
-.row-3__pictures p, h6 {
-    margin: 0;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-}
-
 .subscription {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.subscription h4 {
+.subscription__title {
     font-family:"Montserrat", sans-serif;
     font-size: 40px;
     max-width: 235px;
@@ -299,8 +276,8 @@ a {
 .end {
     background-color: black;
     color:#ffff;
-    min-height: 285px;
-    position: relative;
+    min-height: 250px;
+
 
 }
 .end__list {
@@ -308,47 +285,40 @@ a {
     justify-content: space-between;
     box-sizing: border-box;
     margin:0;
-    padding-left: 24px;
     padding-top: 50px;
     flex-wrap: wrap;
     padding-inline: 10px;
-}
-.end__list li {
-    max-width: 162px;
-    margin-right: 85px;
-    font-size: 14px;
+    gap: 10px;
     font-family: "Poppins", sans-serif;
-
+    font-size: 14px;
 }
-.end__list h6 {
+.end__list--li {
+    width: 162px;
+}
+.social__title, .list__title {
     color: #C4C4C4;
-
 }
-.end__list li:last-of-type {
-    margin-left: 246px;
-    max-width: 200px;
-
+.social__img {
+    margin-bottom: 15px;
 }
-
 .shopy_inc {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     color: #C4C4C4;
     min-width: 214px;
-    margin: auto;
-    height: 12px;
 
 }
-.end__list__follow img {
+.list__social {
     margin-right: 13px;
-    width: 25px;
+    gap: 10px;
     height: 25px;
+    /* margin-left: 246px; */
+    max-width: 200px;
 
 }
-.end__list__follow h6 {
-    margin-bottom: 13px;
-}
+.social__title {
+    margin-bottom: 13px; 
+} 
   @media (max-width:950px) {
     .under_nav__legend {
         padding-top: 400px;
@@ -395,7 +365,7 @@ a {
     .navigation__shoppy {
         margin-top: 56px;
     }
-    .navigation_end img {
+    .navigation_end__search--img, .navigation_end__backet--img {
         height: 21px;
         width: 20px;
         padding-left: 16px; 
@@ -403,24 +373,20 @@ a {
     .end {
         min-height: 435px;
     }
-    .end__list li {
-        margin-right: 60px;
-        margin-bottom: 10px;
-     } 
-    .end__list li:last-of-type {
-        margin: 0px 0px 0px 24px;
-    }  
     .shopy_inc {
-        position: static;
-        padding: 10px 5px 10px 5px;
+        padding: 50px 5px 10px 5px;
         text-align: center;
+        margin: 0px;
 
     }
-    .row-1__pict-1, .row-1__pict-2 {
-        background-size: 342px 342px;
-}
-    .row-1 {
-        gap: 3px;
+    .categories__pict-1, .categories__pict-2 {
+        /* background-size:  342px 213px; */
+        width: 342px;
+        height: 213px;
+        background-size: cover;
+    }
+    .categories {
+        gap: 7px;
     }
 
   }
